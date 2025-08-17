@@ -189,6 +189,23 @@ section {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
+/* Fade-in animation for hero text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
 .feature-item i {
   font-size: 2.5rem;
   color: var(--highlight);
@@ -288,6 +305,13 @@ section {
   font-size: 0.9rem;
   opacity: 0.85;
   line-height: 1.5;
+}
+
+/* Style for animated numbers */
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
 }
 
 /* CTA section */

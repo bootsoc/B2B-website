@@ -31,4 +31,27 @@ document.addEventListener('DOMContentLoaded', function () {
       navList.classList.toggle('show');
     });
   }
+
+      // Animated counters for stats section
+      const counters = document.querySelectorAll('.stat-number');
+      counters.forEach(counter => {
+        const target = parseFloat(counter.getAttribute('data-target')) || 0;
+        const suffix = counter.getAttribute('data-suffix') || '';
+        const prefix = counter.getAttribute('data-prefix') || '';
+        const duration = 2000; // total animation time in ms
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          const current = Math.floor(progress * target);
+          counter.innerText = prefix + current + suffix;
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          } else {
+            // ensure final value matches target
+            counter.innerText = prefix + target + suffix;
+          }
+        };
+        window.requestAnimationFrame(step);
+      });
 });
