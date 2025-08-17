@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | PrecisionB2B</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p+DtcwYiT7dTsKFTN5xlCzCFol75izaQHs5HUncCkZBHwNOpyYOux/Q3Zx+YYcJ0oWkXv79s6B9G71V+PeE8eg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Local styles for the contact page */
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .contact-details,
+    .contact-form {
+      flex: 1;
+      min-width: 280px;
+    }
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+      background: var(--highlight);
+      color: var(--text-light);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .contact-form button:hover {
+      background: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><a href="index.html" style="text-decoration:none;color:inherit;">PrecisionB2B</a></div>
+    <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" style="background-image:url('analytics.png');min-height:60vh;">
+    <div class="content">
+      <h1 class="animate">Contact Us</h1>
+      <p class="animate">Let’s start a conversation about your growth goals.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="animate">Get in Touch</h2>
+      <div class="contact-container">
+        <div class="contact-details animate">
+          <p><i class="fas fa-envelope"></i> <strong>Email:</strong> hello@example.com</p>
+          <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 98765 43210</p>
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Pune, Maharashtra, India</p>
+          <p><i class="fas fa-clock"></i> <strong>Hours:</strong> Mon – Fri, 9:00 – 18:00 IST</p>
+          <p>We’re here to answer your questions about lead generation, demand campaigns and anything else related to B2B growth.</p>
+        </div>
+        <div class="contact-form animate">
+          <form action="mailto:hello@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container container">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Our process</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#ai">AI & ABM</a></li>
+          <li><a href="services.html#demand">Demand generation</a></li>
+          <li><a href="services.html#appointment">Appointment setting</a></li>
+          <li><a href="services.html#data">Data enrichment</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 PrecisionB2B. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

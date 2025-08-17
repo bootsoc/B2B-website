@@ -1,289 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Precision‑Driven B2B Growth</title>
-  <style>
-    /* Reset some basic styling */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      line-height: 1.6;
-      color: #333;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background: #1e293b;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .hero-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.2;
-      object-fit: cover;
-      z-index: 0;
-    }
-
-    header .content {
-      position: relative;
-      z-index: 1;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .feature {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .feature h3 {
-      color: #1e293b;
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-    }
-
-    .feature p {
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    .process {
-      background: #fff;
-      border-radius: 8px;
-      padding: 40px 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .process h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #1e293b;
-    }
-
-    .steps {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-    }
-
-    .step {
-      flex: 1 1 300px;
-      background: #f3f4f6;
-      border-radius: 8px;
-      padding: 20px;
-      position: relative;
-    }
-
-    .step::before {
-      content: attr(data-step);
-      position: absolute;
-      top: -15px;
-      left: 10px;
-      background: #f97316;
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 0.8rem;
-    }
-
-    .stats {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 30px;
-    }
-
-    .stat {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      flex: 1 1 200px;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .stat h3 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: #1e293b;
-    }
-
-    .stat p {
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-
-    .cta {
-      background: #1e293b;
-      color: #fff;
-      border-radius: 8px;
-      padding: 40px 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .cta h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-
-    .cta p {
-      font-size: 1rem;
-      margin-bottom: 30px;
-    }
-
-    .cta a {
-      display: inline-block;
-      background: #f97316;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      background: #f3f4f6;
-      text-align: center;
-      padding: 20px 10px;
-      margin-top: 40px;
-      font-size: 0.8rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precision-Driven B2B Growth</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p+DtcwYiT7dTsKFTN5xlCzCFol75izaQHs5HUncCkZBHwNOpyYOux/Q3Zx+YYcJ0oWkXv79s6B9G71V+PeE8eg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <!-- Hero image illustrating the concept of digital growth and B2B connectivity -->
-    <img src="hero.png" alt="Hero" class="hero-image">
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><a href="index.html" style="text-decoration:none;color:inherit;">PrecisionB2B</a></div>
+    <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="content">
-      <h1>Precision‑Driven B2B Growth</h1>
-      <p>Unlock demand generation, account‑based marketing and AI‑powered lead verification to grow your pipeline.</p>
-    </div>
-  </header>
-
-  <section>
-    <h2>About Us</h2>
-    <p style="margin-top:20px;">We’re a performance‑marketing studio built on the belief that successful B2B campaigns start with clarity.  Our team combines deep domain expertise with modern martech to deliver qualified opportunities for our clients.  Drawing inspiration from leading B2B demand‑generation companies, we offer AI‑enabled account targeting, content syndication, programme management and data enrichment to help you reach and convert your ideal customers.</p>
-    <div class="features">
-      <div class="feature">
-        <h3>AI &amp; Account‑Based Marketing</h3>
-        <p>Leverage AI‑driven scoring and intent data to prioritise high‑value accounts.  Our ABM programmes use firmographic and behavioural signals to drive conversion with multi‑channel outreach.</p>
-      </div>
-      <div class="feature">
-        <h3>Demand Generation &amp; Content Syndication</h3>
-        <p>Deliver your message to millions of technology, business and government buyers through targeted content syndication, webinars and programmatic nurture campaigns.</p>
-      </div>
-      <div class="feature">
-        <h3>Appointment Setting &amp; Lead Nurturing</h3>
-        <p>Secure meetings with qualified decision‑makers.  We use tailored outreach sequences, webinars and live demos to move prospects from curiosity to commitment.</p>
-      </div>
-      <div class="feature">
-        <h3>Data Enrichment &amp; Compliance</h3>
-        <p>Keep your data clean and compliant.  We enrich leads with firmographic, technographic and intent signals, ensuring every contact meets GDPR/CCPA requirements.</p>
+      <h1 class="animate">Precision-Driven B2B Growth</h1>
+      <p class="animate">Unlock demand generation, account-based marketing and AI-powered lead verification to grow your pipeline.</p>
+      <div class="buttons animate">
+        <a href="services.html" class="btn primary">Explore Services</a>
+        <a href="contact.html" class="btn secondary">Get Started</a>
       </div>
     </div>
   </section>
 
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="animate">Our Expertise</h2>
+      <div class="feature-grid">
+        <div class="feature-item animate">
+          <i class="fas fa-brain"></i>
+          <h3>AI & Account-Based Marketing</h3>
+          <p>Leverage AI-driven scoring and behavioural intent data to prioritise high-value accounts. Our ABM programmes use firmographic and technographic signals to drive multi-channel outreach.</p>
+        </div>
+        <div class="feature-item animate">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Demand Generation & Content Syndication</h3>
+          <p>Deliver your message to millions of technology, business and government buyers through targeted email, content syndication, webinars and programmatic nurture campaigns.</p>
+        </div>
+        <div class="feature-item animate">
+          <i class="fas fa-handshake"></i>
+          <h3>Appointment Setting & Lead Nurturing</h3>
+          <p>Secure meetings with qualified decision‑makers. We use tailored outreach sequences, webinars and live demos to move prospects from curiosity to commitment.</p>
+        </div>
+        <div class="feature-item animate">
+          <i class="fas fa-database"></i>
+          <h3>Data Enrichment & Compliance</h3>
+          <p>Keep your data clean and compliant. We enrich leads with firmographic, technographic and intent signals, ensuring every contact meets GDPR/CCPA requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
   <section class="process">
-    <h2>Our Lead Generation Process</h2>
-    <div class="steps">
-      <div class="step" data-step="1. Define ICP">
-        <h3>Define Ideal Customer Profile</h3>
-        <p>We start by researching your best‑fit industries, company sizes and decision‑makers.  This ensures your campaigns focus on prospects with the greatest revenue potential【272458074847232†screenshot】.</p>
-      </div>
-      <div class="step" data-step="2. Educate">
-        <h3>Create Value‑Driven Content</h3>
-        <p>We publish SEO‑optimised guides, reports, webinars and other resources that position your brand as a trusted advisor.  67 % of the buyer’s journey now happens before a prospect speaks to sales【582434184834118†screenshot】.</p>
-      </div>
-      <div class="step" data-step="3. Capture">
-        <h3>Capture Qualified Leads</h3>
-        <p>Lead magnets, free tools and registration forms gather accurate contact data.  We capture the firmographic and behavioural signals needed for effective scoring【381694813437193†screenshot】.</p>
-      </div>
-      <div class="step" data-step="4. Nurture">
-        <h3>Nurture with Multi‑Channel Journeys</h3>
-        <p>Dynamic email sequences, webinars and live Q&amp;A sessions engage prospects, educating them on your solution.  Hyper‑targeted nurturing and lead scoring identify the buyers ready for the next step【331590878951153†screenshot】.</p>
-      </div>
-      <div class="step" data-step="5. Validate">
-        <h3>Validate &amp; Enrich</h3>
-        <p>Our three‑stage lead‑verification framework ensures each contact matches your ICP, removes duplicates and enriches data with firmographic and technographic insights【43763493637454†L316-L341】.</p>
-      </div>
-      <div class="step" data-step="6. Convert &amp; Optimise">
-        <h3>Convert &amp; Optimise</h3>
-        <p>Qualified leads are routed to your sales team for personalised demos and offers.  We continuously test messaging, channels and incentives to improve conversion rates【381694813437193†screenshot】.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Why Work With Us?</h2>
-    <div class="stats" style="margin-top:30px;">
-      <div class="stat">
-        <h3>63M+</h3>
-        <p>Reach over 63 million technology, business and government buyers worldwide—mirroring the scale delivered by top providers【55118312289464†L0-L2】.</p>
-      </div>
-      <div class="stat">
-        <h3>169K</h3>
-        <p>Benefit from high‑volume lead generation models that deliver tens of thousands of qualified leads per month【457107399337050†L51-L61】.</p>
-      </div>
-      <div class="stat">
-        <h3>33%↓</h3>
-        <p>Mature funnels generate 50 % more sales‑ready leads at 33 % lower costs when matched to intent and nurture programmes【293313656090589†screenshot】.</p>
-      </div>
-      <div class="stat">
-        <h3>&lt;5%</h3>
-        <p>Reduce lead rejection rates to less than 5 % by implementing our rigorous validation framework【43763493637454†L344-L356】.</p>
+    <div class="container">
+      <h2 class="animate">Our Lead Generation Process</h2>
+      <div class="process-grid">
+        <div class="process-step animate">
+          <div class="number">1</div>
+          <h4>Define ICP</h4>
+          <p>We research your best‑fit industries, company sizes and decision‑makers so campaigns focus on prospects with the greatest revenue potential.</p>
+        </div>
+        <div class="process-step animate">
+          <div class="number">2</div>
+          <h4>Educate</h4>
+          <p>We publish search‑optimised guides, reports, webinars and other resources that position your brand as a trusted advisor.</p>
+        </div>
+        <div class="process-step animate">
+          <div class="number">3</div>
+          <h4>Capture</h4>
+          <p>Lead magnets, free tools and registration forms gather accurate contact data. We capture firmographic and behavioural signals needed for effective scoring.</p>
+        </div>
+        <div class="process-step animate">
+          <div class="number">4</div>
+          <h4>Nurture</h4>
+          <p>Dynamic email sequences, webinars and live Q&A sessions engage prospects, educating them on your solution and moving them toward purchase.</p>
+        </div>
+        <div class="process-step animate">
+          <div class="number">5</div>
+          <h4>Validate</h4>
+          <p>Our three‑stage lead‑verification framework ensures each contact matches your ICP, removes duplicates and enriches data with intent signals.</p>
+        </div>
+        <div class="process-step animate">
+          <div class="number">6</div>
+          <h4>Convert & Optimise</h4>
+          <p>Qualified leads are routed to your sales team for personalised demos and offers. We continuously test messaging, channels and incentives to improve conversion rates.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate">
+          <h3>63M+</h3>
+          <p>Reach over 63 million technology, business and government buyers worldwide — mirroring the scale delivered by top providers.</p>
+        </div>
+        <div class="stat-item animate">
+          <h3>169K</h3>
+          <p>Benefit from high‑volume lead generation models that deliver tens of thousands of qualified leads per month.</p>
+        </div>
+        <div class="stat-item animate">
+          <h3>33%↓</h3>
+          <p>Mature funnels generate 50 % more sales‑ready leads at 33 % lower costs when matched to intent and nurture programmes.</p>
+        </div>
+        <div class="stat-item animate">
+          <h3>&lt;5%</h3>
+          <p>Reduce lead rejection rates to less than 5 % by implementing our rigorous validation framework.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
   <section class="cta">
-    <h2>Ready to Grow Your Pipeline?</h2>
-    <p>Let’s explore how our precision‑driven methodology can deliver more qualified opportunities for your business.</p>
-    <a href="#">Schedule a consultation</a>
+    <h2 class="animate">Ready to Grow Your Pipeline?</h2>
+    <p class="animate">Let’s explore how our precision‑driven methodology can deliver more qualified opportunities for your business.</p>
+    <a href="contact.html" class="btn primary animate">Schedule a Consultation</a>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Precision‑Driven B2B Growth.  Data insights derived from publicly available sources; all trademarks are the property of their respective owners.</p>
+    <div class="footer-container container">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Our process</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#ai">AI & ABM</a></li>
+          <li><a href="services.html#demand">Demand generation</a></li>
+          <li><a href="services.html#appointment">Appointment setting</a></li>
+          <li><a href="services.html#data">Data enrichment</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 PrecisionB2B. All rights reserved.
+    </div>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
